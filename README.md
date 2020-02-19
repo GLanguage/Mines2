@@ -79,3 +79,7 @@ $ make clean
 
 ## Thanks
 Thank [@itas109](https://github.com/itas109) for providing `./src/osplatformutil.h` ([LINK](https://github.com/itas109/OSPlatformUtil))
+
+## Known Bugs
+*NOTE: If you find any bugs, feel free to raise an issue.*
+> NONE
