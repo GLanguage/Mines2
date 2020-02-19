@@ -78,4 +78,4 @@ $ make clean
 ```
 
 ## Thanks
-Thank @itas109 for providing `./src/osplatformutil.h` (LINK)
+Thank [@itas109](https://github.com/itas109) for providing `./src/osplatformutil.h` ([LINK](https://github.com/itas109/OSPlatformUtil))
