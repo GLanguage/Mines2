@@ -77,6 +77,25 @@ and uninstall it by running
 $ make clean
 ```
 
+## How to Play
+The game begins with a 9 * 9 map:
+```
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+N	N	N	N	N	N	N	N	N	
+```
+The map is full of `N`. `N` means that it is *unknown* (aka *Hided*) . Later, `N` may be replaced by
+- `#` if you *marked* it (as you think it is a mine)
+- `X` if the mine here *exploded*
+- `[0-9]f?l?` as there is/are `[0-9]` mines *around* here (`f` is shown as the *sweep-it-at-first mine* is *around* here, `l` is shown as the *sweep-it-at-last mine* is *around* here)
+- `D` if the mine here has been *swept*
+
 ## Thanks
 Thank [@itas109](https://github.com/itas109) for providing `./src/osplatformutil.h` ([LINK](https://github.com/itas109/OSPlatformUtil))
 
