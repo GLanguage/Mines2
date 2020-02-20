@@ -22,6 +22,6 @@ int main() {
     if (flag == 1)
         cout << "CONGRATULATIONS! YOU WON! " << endl;
     else
-        cout << "YOU LOSE. DON'T GIVE UP. TRY AGAIN. " << endl;
+        cout << "YOU LOST. DON'T GIVE UP. TRY AGAIN. " << endl;
     return 0;
 }
