@@ -78,6 +78,7 @@ $ make clean
 ```
 
 ## How to Play
+### Beginning
 The game begins with a 9 * 9 map:
 ```
 N	N	N	N	N	N	N	N	N	
@@ -91,10 +92,32 @@ N	N	N	N	N	N	N	N	N
 N	N	N	N	N	N	N	N	N	
 ```
 The map is full of `N`. `N` means that it is *unknown* (aka *Hided*) . Later, `N` may be replaced by
-- `#` if you *marked* it (as you think it is a mine)
+- `#` if it is *marked* (as you think it is a mine)
 - `X` if the mine here *exploded*
-- `[0-9]f?l?` as there is/are `[0-9]` mines *around* here (`f` is shown as the *sweep-it-at-first mine* is *around* here, `l` is shown as the *sweep-it-at-last mine* is *around* here)
+- `[0-9]f?l?` if the position is *shown* and there is/are `[0-9]` mines *around* here (`f` is shown as the *sweep-it-at-first mine* is *around* here; `l` is shown as the *sweep-it-at-last mine* is *around* here)
 - `D` if the mine here has been *swept*
+### Checking
+For any *unknown* position P(x, y), if you *believe* it *is not* a mine, you can *check* it (make it *shown*) by entering
+```
+0 x y
+```
+0 means checking, and x, y show the position of P.  
+After entering, if P is *not* a mine, it will turn to `[0-9]f?l?`, showing the number of mines around P. *Otherwise*, it will turn to `X` and the game will be over (with `YOU LOST. ...` printed) .
+### Marking
+For any *unknown* position P(x, y), if you *believe* it *is* a mine, you can *mark* it (to be *swept* later) by entering
+```
+1 x y
+```
+1 means marking, and x, y show the position of P.  
+After entering, P will turn to `#`.
+### Sweeping
+You can *sweep* all the *marked* positions by entering
+```
+-1
+```
+After entering, for each one of the *marked* positions, if it *is* a mine, it will turn to `D`. *Otherwise*, it will turn to `[0-9]f?l?` (*shown*) .  
+If you swept all the mines, the game will be over (with `... YOU WON! ` printed) .
+*NOTE: After sweeping, the game may be over (you win or lose). For further information, see SIAF & SIAL.*
 
 ## Thanks
 Thank [@itas109](https://github.com/itas109) for providing `./src/osplatformutil.h` ([LINK](https://github.com/itas109/OSPlatformUtil))
