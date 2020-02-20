@@ -116,8 +116,10 @@ You can *sweep* all the *marked* positions by entering
 -1
 ```
 After entering, for each one of the *marked* positions, if it *is* a mine, it will turn to `D`. *Otherwise*, it will turn to `[0-9]f?l?` (*shown*) .  
-If you swept all the mines, the game will be over (with `... YOU WON! ` printed) .
+If you swept all the mines, the game will be over (with `... YOU WON! ` printed) .  
 *NOTE: After sweeping, the game may be over (you win or lose). For further information, see SIAF & SIAL.*
+### SIAF & SIAL
+The SIAF (sweep-it-at-first) mine and the SIAL (sweep-it-at-last) mine are the special mines in *Mines2*.  
 
 ## Thanks
 Thank [@itas109](https://github.com/itas109) for providing `./src/osplatformutil.h` ([LINK](https://github.com/itas109/OSPlatformUtil))
