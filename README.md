@@ -109,7 +109,7 @@ $ make clean
 
 ### Colorful Mode
 
-Colorful Mode, enabled by default, makes the game colorful, i.e. <span style="color:red;">X</span> or <span style="color:green;">D</span>.
+Colorful Mode, enabled by default, makes the game UI colorful.
 
 To disable the Colorful Mode, run the game by
 
