@@ -21,7 +21,7 @@ struct Point {
 
 void set(Point map[MR + 1][MR + 1]);
 
-void view(Point map[MR + 1][MR + 1]);
+void view(Point map[MR + 1][MR + 1], bool colorful);
 
 bool isout(int x, int y);
 

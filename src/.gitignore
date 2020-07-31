@@ -33,3 +33,9 @@
 
 # Designs
 *.md
+
+# Outputs
+main
+
+# Caches
+.DS_Store

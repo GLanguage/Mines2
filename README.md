@@ -107,6 +107,20 @@ and uninstall it by running
 $ make clean
 ```
 
+### Colorful Mode
+
+Colorful Mode, enabled by default, makes the game colorful, i.e. <span style="color:red;">X</span> or <span style="color:green;">D</span>.
+
+To disable the Colorful Mode, run the game by
+
+```shell
+# Unix-like
+$ ./main --no-color
+
+# Windows
+$ main.exe --no-color
+```
+
 ## How to Play
 
 ### Beginning
@@ -114,15 +128,25 @@ $ make clean
 The game begins with a 9 * 9 map:
 
 ```
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
-N	N	N	N	N	N	N	N	N	
+ 	1	2	3	4	5	6	7	8	9	
+
+1	N	N	N	N	N	N	N	N	N	
+
+2	N	N	N	N	N	N	N	N	N	
+
+3	N	N	N	N	N	N	N	N	N	
+
+4	N	N	N	N	N	N	N	N	N	
+
+5	N	N	N	N	N	N	N	N	N	
+
+6	N	N	N	N	N	N	N	N	N	
+
+7	N	N	N	N	N	N	N	N	N	
+
+8	N	N	N	N	N	N	N	N	N	
+
+9	N	N	N	N	N	N	N	N	N
 ```
 
 The map is full of `N`. `N` means that it is *unknown* (aka *Hided*) . Later, `N` may be replaced by

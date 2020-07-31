@@ -62,16 +62,24 @@ void set(Point map[MR + 1][MR + 1]) {
 	}
 }
 
-void view(Point map[MR + 1][MR + 1]) {
+void view(Point map[MR + 1][MR + 1], bool colorful) {
 	clear();
+    cout << " \t";
+    for (int j = 1; j <= 9; j++) {
+        cout << j << '\t';
+    }
+    cout << endl << endl;
 	for (int i = 1; i <= 9; i++) {
+        cout << i << '\t';
 		for (int j = 1; j <= 9; j++) {
 			switch (map[i][j].state) {
 				case Show:
                     if (map[i][j].thing == -1) {
+                        if (colorful) swept_attr();
                         cout << "D\t";
                         break;
                     }
+                    if (colorful) number_attr();
 					cout << map[i][j].thing;
 					if (map[i][j].Nkind == 1) {
 						cout << 'f';
@@ -82,16 +90,19 @@ void view(Point map[MR + 1][MR + 1]) {
 					cout << '\t';
 					break;
 				case Mark:
+                    if (colorful) marked_attr();
 					cout << "#\t";
 					break;
 				case Boom:
+                    if (colorful) exploded_attr();
 					cout << "X\t";
 					break;
 				default:
 					cout << "N\t";
 			}
+            clear_attr();
 		}
-		cout << endl;
+		cout << endl << endl;
 	}
 }
 
