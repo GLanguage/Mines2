@@ -125,7 +125,7 @@ $ main.exe --no-color
 
 ### Beginning
 
-The game begins with a 9 * 9 map:
+The game begins with a 9 * 9 map, where the vertical axis is **x** while the horizontal axis is **y**:
 
 ```
  	1	2	3	4	5	6	7	8	9	
